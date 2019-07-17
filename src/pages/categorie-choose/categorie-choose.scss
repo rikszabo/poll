@@ -1,0 +1,39 @@
+page-categorie-choose {
+
+    .titleText{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: left;
+        transform: translate(-50%, -50%);
+    }
+
+    .body{
+        background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+    }
+
+    .toolbar-title-md {
+        padding: 0 12px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .toolbar-title-ios {
+        padding: 0 12px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+        color: #ffffff;
+        background-color: transparent;
+    }
+
+    .bar-button-default-ios, .bar-button-clear-ios-default, .bar-button-ios-default {
+        color: #ffffff;
+        background-color: transparent;
+    }
+
+}

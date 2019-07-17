@@ -1,0 +1,69 @@
+<!--
+  Generated template for the SavedQuestionsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-navbar transparent>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Saved Questions</ion-title>
+    <ion-buttons end>
+      <button *ngIf="empty == false" ion-button icon-only (click)="delete()">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="body" padding>
+
+  <div *ngIf="empty" style="text-align: center; color: #ffffff;">
+    <h4>Empty</h4>
+  </div>
+
+  <ion-card *ngIf="polar" style="width: 100%; border-radius: 15px; margin: 0 auto;">
+    <ion-card-header class="headTitle">
+      {{question}}?
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #polarCanvas height="150px"></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <div style="margin: 10px;"></div>
+
+  <ion-card *ngIf="bar" style="width: 100%; border-radius: 15px; margin: 0 auto;">
+    <ion-card-header class="headTitle">
+      Voters of countries
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barCanvas height="200px"></canvas>
+      <h5 style="text-align: right; text-decoration-line: underline; margin-top: 3px; margin-bottom: 3px;"
+          (click)="openAllCountryPage()">All data</h5>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer style="opacity: 0.8;">
+  <ion-toolbar>
+    <div style=" position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.7;">
+      <div style="display: flex;">
+        <div style="margin-right: 20px;">
+          <button ion-button round [disabled]="previousButton" (click)="previous()">
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+        </div>
+        <div>
+          <button ion-button round [disabled]="nextButton" (click)="next()">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

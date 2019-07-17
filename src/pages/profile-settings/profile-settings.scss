@@ -1,0 +1,62 @@
+page-profile-settings {
+ 
+    .titleText{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: left;
+        transform: translate(-50%, -50%);
+    }
+
+    
+    .changeButton{
+        margin: 0px; 
+        text-align: right;
+        max-height: 15px;
+        width: 100%;
+        float: right;
+        transform: translateY(-3px);
+    }
+
+    .body{
+        background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+    }
+
+    .button-inner{
+        color: #ffffff;
+    }
+    
+    .toolbar-title{
+        color: #ffffff;
+    }
+
+    .item{
+        background-color: transparent;
+        color: #ffffff;
+    }
+
+    .item-md p{
+        color: #ffffff;
+    }
+
+    .label-md{
+        color: #ffffff;
+    }
+
+    .item-ios p{
+        color: #ffffff;
+    }
+
+    .label-ios{
+        color: #ffffff;
+    }
+
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+        border-bottom: 0px solid #c8c7cc;
+    }
+
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+        color: #ffffff;
+    }
+
+}
