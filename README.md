@@ -1,3 +1,4 @@
 # poll
 
+Run npm install
 
